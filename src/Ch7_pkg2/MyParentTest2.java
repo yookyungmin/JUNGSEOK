@@ -1,6 +1,6 @@
 package Ch7_pkg2;
 
-import Ch7_pkg1.MyParent; //ctrl shift O
+import Ch7_pkg1.MyParent;
 
 class Mychild extends MyParent{ //Ch7_pkg1.MyParent
 	public void printmembers() {
@@ -13,7 +13,7 @@ class Mychild extends MyParent{ //Ch7_pkg1.MyParent
 
 
 
-public class Ex11_modifier2 {
+public class MyParentTest2 {
 
 	public static void main(String[] args) {
 		MyParent p = new MyParent();

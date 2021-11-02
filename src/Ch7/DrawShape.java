@@ -43,7 +43,11 @@ class Pointee {// 클래스
 		return "("+x+","+y+")"; // x와 y와 값을 문자열로 반환
 	}
 }
+// A Circle is a Shape = 원은 도형이다 (자연스럽) (상속관계로)
+// A Circle is a point = 원은 점이다?
 
+//A Circle has a Shape 원은 도형을 가지고 있다
+// A Circle has point 원은 점을 가지고 있따 (자연스럽) 포함관계로
 class Circlee extends Shape{ //상속 관계
 	Pointee center; //원의 원점좌표 // 포함관계 
 	int r; //반지름 
