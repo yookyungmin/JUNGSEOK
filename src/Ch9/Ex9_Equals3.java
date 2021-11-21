@@ -2,6 +2,7 @@ package Ch9;
 class Person {
 	long id; // this.id
 	
+	
 	public boolean equals(Object obj) {
 	if(!(obj instanceof Person))
 	

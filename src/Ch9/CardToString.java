@@ -16,7 +16,7 @@ class Card{
 		}
 		
 		public String toString() {
-			return "kind : "+kind+", number : "+number;
+			return "kind : "+kind+", number : "+number; //Card 인스턴스의 kind와 number을 문자열로 변환 없으면 해쉬코드로 나옴 
 		}
 }
 

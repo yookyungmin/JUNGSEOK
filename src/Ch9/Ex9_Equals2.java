@@ -1,7 +1,7 @@
 package Ch9;
 class Ex9_Eqauls2{
    public static void main(String[] args) {
-      value v1 = new value(10);
+      value v1 = new value(10);  //객체 생성
       value v2 = new value(10);
       
        if (v1.equals(v2))
