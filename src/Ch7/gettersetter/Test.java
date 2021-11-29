@@ -5,6 +5,8 @@ package Ch7.gettersetter;
 	private int power;  //힘
 	private int dex;//민첩
 	private int intel;//지능
+//은 private로 직접적인 접근을 할 수 없도록 막고, getter/setter메서드를 통해서만 접근할 수 있도록 제한할 수 있다 게터 세터
+//객체들의 데이터(필드)를 외부에서 직접적으로 접근하는 것을 막아놓습니다
 
 	public int getPower() {
 		return power;
@@ -49,7 +51,7 @@ public class Test {
 
 		character.setPower(999);
 		character.setDex(999);
-		character.setIntel(999);
+		character.setIntel(90);
 		//setter 메소드를통해 스탯별 능력치배분
 		//, 필드 값에 직접 데이터를 입력하는 것이 아닌,
 		//setter메서드를 사용하여, 값을 초기화시켜주는 방식이다.
