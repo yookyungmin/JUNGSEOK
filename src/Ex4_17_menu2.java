@@ -8,6 +8,8 @@ public class Ex4_17_menu2 {
 		int num = 0;
 
 		Scanner scanner = new Scanner(System.in);
+		//스캐너문 입력값 scanner
+//		Scanner scanner2 = new Scanner(System.in);
 		
 		outer: // while문에 outer라는 이름을 붙인다
 		while(true) { // 무한반복문
@@ -15,6 +17,9 @@ public class Ex4_17_menu2 {
 			System.out.println("(2) square root");
 			System.out.println("(3) log");
 			System.out.print("원하는 메뉴(1~3)를 선택하세요.(종료 : 0)>");
+
+//			String tmp2 = scanner2.nextLine();  // 입력받은 내용을 tmp2 에저장.
+	//		menu = Integer.parseInt(tmp2); // tmp2를 숫자로 변환
 			
 			String tmp = scanner.nextLine(); //화면에 입력받은 내용을 tmp에 저장
 			menu= Integer.parseInt(tmp);// 입력받은 문자열 tmp를 숫자로변환

@@ -1,10 +1,20 @@
 package Ch7;
 
 import org.omg.CORBA.FREE_MEM;
-
+class Car{
+	Car(){}
+	
+}
+class FireEngine extends Car{
+	 FireEngine() {
+		 
+	}
+}
 public class InstanceOfTest {
 
 	public static void main(String[] args) {
+		
+	
 		FireEngine  fe = new FireEngine();
 		
 		if(fe instanceof FireEngine) {
@@ -19,8 +29,9 @@ public class InstanceOfTest {
 		}
 		System.out.println(fe.getClass().getName()); // 참조변수가 가리키고 있는 인스턴스의 클래스 이름을 문자열로 반환
 
+		
+		
+		
 	}
 
 }
-class Car{} 
-class FireEngine extends Car{}

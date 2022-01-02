@@ -23,6 +23,7 @@ package Ch7.gettersetter;
 	public int getDex() {
 		return dex;
 	}
+
 	public void setDex(int dex) {
 		if(dex<0) {
 			this.dex=0;
