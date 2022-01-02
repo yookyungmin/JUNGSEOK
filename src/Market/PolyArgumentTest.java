@@ -30,6 +30,7 @@ class Productt{
 	class Phonee extends Productt{
 		Phonee(){
 			super(50); // 폰의 가격 50
+	
 		}
 		public String toString() {
 			return "Phonee이다";
