@@ -6,6 +6,7 @@ class Productt{
 	int price; // 제품의 가격
 	int bonusPoint; // 제품 구매시 제공하는  보너스점수
 	
+	
 	Productt(int price) {
 	this.price = price; // this.price 인스턴스 변수 = price; 매개변수
 	bonusPoint = (int)(price/10.0); //보너스 점수는 제품 가격의 10%
@@ -13,7 +14,7 @@ class Productt{
 	
 }
 
-	class Tvv extends Productt{
+	class Tvv extends Productt{ //Tvv 클래스가 productt 상속받음
 	Tvv(){
 	//조상 클래스의 생성자 Product(int price)를 호출한다.
 	super(100); // TV가격을 100만원으로 한다.
@@ -21,13 +22,13 @@ class Productt{
 	//Object클래스의 toString() 을 오버라이딩 한다.
 	public String toString() { return "TV";}
 } 
-	class Computerr extends Productt{
-	Computerr() {
+	class Computerr extends Productt{ //컴퓨터 클래스 productt 상속
+	Computerr() { // 생성자
 	super(200); //컴퓨터 가격
 	}
 	public String toString() {return "Computer";} // 출력값에서 나오는 문장
 }
-	class Phonee extends Productt{
+	class Phonee extends Productt{ // 
 		Phonee(){
 			super(50); // 폰의 가격 50
 	
@@ -42,7 +43,7 @@ class Productt{
 		int money = 1000; // 소유금액
 		int bonusPoint = 0; //보너스점수
 		
-		Productt[] cart = new Productt[10]; //구입한 물건을 담을 배열 
+		Productt[] cart = new Productt[10]; //구입한 물건을 담을 배열
 		int i = 0; //
 	
 	void buy(Productt p) {//Productt의 p 참조변수
