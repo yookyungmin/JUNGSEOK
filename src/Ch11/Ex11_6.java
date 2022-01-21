@@ -53,4 +53,8 @@ class Ex11_6 {
 		System.out.println("chArr="+Arrays.toString(chArr));
 		System.out.println("index of B ="+Arrays.binarySearch(chArr, 'B'));
 	}
+	
+	//순차적으로 데이터를 추가삭제// ArrayList(비효율적인메모리사용)가 LinkedList(데이터가많을수록접근성이 떨어짐)보다 빠름  
+	//비순차적(중간에)데이터를 추가삭제//LinkedList가 빠름
+	//(읽기)접근시간 ArrayList가 빠름
 }

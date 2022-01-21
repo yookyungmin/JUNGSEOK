@@ -22,6 +22,7 @@ public class Collection {
 		list1.add(new Integer(0));
 		list1.add(new Integer(1));
 		list1.add(new Integer(3));
+	
 		//ArrayList(Collection c)
 		
 		ArrayList list2 = new ArrayList(list1.subList(1, 4)); //sublist 일부를 뽑아서 새로운 list를만든다 1<=x<4  범위// 4, 2, 0
