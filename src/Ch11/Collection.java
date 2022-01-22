@@ -3,8 +3,10 @@ package Ch11;
 import java.awt.List;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.ListIterator;
 
 import javax.swing.plaf.synth.SynthScrollPaneUI;
+import javax.swing.text.StyledEditorKit.ForegroundAction;
 
 //ArrayList list를 구현해서 순서o중복o
 public class Collection {
@@ -23,8 +25,11 @@ public class Collection {
 		list1.add(new Integer(1));
 		list1.add(new Integer(3));
 	
+		
 		//ArrayList(Collection c)
 		
+		System.out.printf("list.get(%d)=%d",0, list1.get(0));
+		System.out.println();
 		ArrayList list2 = new ArrayList(list1.subList(1, 4)); //sublist 일부를 뽑아서 새로운 list를만든다 1<=x<4  범위// 4, 2, 0
 		/* 위 한줄과 아래두줄 동일
 		 * list sub = list1.sublist(1,4);  //sub는 읽기만 가능 [4,2,0]
@@ -53,7 +58,9 @@ public class Collection {
 		System.out.println("index="+list1.indexOf("1")); //list1에서 문자열 1이 어디에 있는지 알려줌
 		System.out.println("index="+list1.indexOf(1)); //list1에서 문자열 1이 어디에 있는지 알려줌
 		System.out.println("index="+list1.indexOf(new Integer(1))); //list1에서 문자열 1이 어디에 있는지 알려줌
-//		list1.remove(0);//멘앞 0 인덱스에 있던 에 있떤 String 1이 없어짐
+		System.out.println("index="+list1.indexOf("A"));
+		//		list1.remove(0);//멘앞 0 인덱스에 있던 에 있떤 String 1이 없어짐
+		
 		list1.remove(new Integer(1)); //인덱스1 사라짐
 		print(list1, list2);
 		
@@ -68,7 +75,15 @@ public class Collection {
 				list2.remove(i);
 		}
 			print(list1, list2);
+			
+//			for(int i=0; i<list1.size(); i++) {
+//				for(int j=0; j<list2.get(i).length(); j++) {
+//					System.out.println();
+//				}
+//			}
 	}
+	
+//	}
 	//ArrayList에 저장된 첫번쨰 객체부터 삭제하는 경우 배열복사발생 ,, 
 	/*
 	 * for(int i=0; i<list.size(); i++)
@@ -82,11 +97,24 @@ public class Collection {
 //		for(int i=0; i<list1.size(); i++) {
 //			System.out.println(list1.get(i));
 //		} //반복문을 이용해 list1출력
+		
+//	for(int i =0; i<list1.size(); i++) {
+//		System.out.printf("list.get(%d) = %d\n",i, list1.get(i));
+//	}
+//	}
+	/*
+	 *  list.get(0) = 0
+		list.get(1) = 2
+		list.get(2) = 4
+	 */
+	 
 	
 	static void print(ArrayList list1, ArrayList list2) {
 		System.out.println("list1:" +list1);
 		System.out.println("list2:" + list2);
 		System.out.println();
 	}
+	
+	
 
 }
