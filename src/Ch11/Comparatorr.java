@@ -26,7 +26,7 @@ public class Comparatorr {
 
 }
 
-class Descending implements Comparator{
+class Descending implements Comparator{ //정렬기준 구현
 	public int compare(Object o1, Object o2) {
 		if(o1 instanceof Comparable && o2 instanceof Comparable) {
 			Comparable c1 = (Comparable)o1;
