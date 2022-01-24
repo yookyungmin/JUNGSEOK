@@ -19,6 +19,7 @@ public class Iter {
 		list.add(4);
 		list.add(5);
 		
+		
 		Iterator it = list.iterator();
 		
 		while (it.hasNext()) {
@@ -35,6 +36,7 @@ public class Iter {
 		for(int i=0; i<list.size(); i++) {
 			Object obj = list.get(i);  //hashset 겟 메서드가 없어 동작x
 			System.out.println(obj);
+			
 		}
 		
 		for(Object i:list) { 
