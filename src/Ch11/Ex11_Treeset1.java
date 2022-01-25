@@ -13,7 +13,7 @@ public class Ex11_Treeset1 {
 				set.add(new Integer(score[i]));
 			}
 			System.out.println("50보다 작은값"+set.headSet(50));
-			System.out.println("50보다 큰값"+set.tailSet(new Integer(50)));
+			System.out.println("50보다 큰값"+set.tailSet(new Integer(50)));//컴파일러가 50으로 바꿔줌
 			System.out.println("40과 80 사이의 값"+set.subSet(40, 80));
 
 			
