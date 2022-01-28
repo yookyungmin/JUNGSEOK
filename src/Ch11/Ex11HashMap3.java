@@ -11,7 +11,7 @@ public static void main(String[] args) {
 	//map put
 	map1.put("map1-key1", 100);
 	map1.put("map1-key2", 200);
-	
+
 	//map2 put
 	map2.put("map2-key2", 300);
 	map2.put("map2-key3",400);
