@@ -13,6 +13,7 @@ public class ArrayLemployee {
 		//Book을 담기위한 ArrayList를 객체를만드시오 Book클래스를 끌어와서만듬
 		ArrayList<Book> list = new ArrayList<Book>();
 		ArrayList<Book> list2 = new ArrayList<Book>();
+		ArrayList<Book> list3 = new ArrayList<Book>();
 		
 		//객체를생성
 		Book onpice =new  Book("원피스", 5000);
@@ -29,6 +30,9 @@ public class ArrayLemployee {
 		list.add(javapro);
 		list.add(htmlcss);
 		list.add(spring);
+		
+		//list2에 객체추가
+		list2.add(onpice);
 	
 		//4리스트에 담긴 모든 책 정보 출력
 		
@@ -39,8 +43,11 @@ public class ArrayLemployee {
 		for(int i =0; i<list.size(); i++) {
 			System.out.printf("list.get(%d) -> %s\n",i, list.get(i));
 		}
+		
+		System.out.println(list2.get(0));
 	}
 
+	
 }
 
 class Book{
