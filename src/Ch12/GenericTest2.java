@@ -59,7 +59,8 @@ public class GenericTest2 {
 		productList.add(toni);
 		
 		for(int i = 0; i<productList.size(); i++) {
-			System.out.printf("productlist.get(%d) -> %s\n",i, productList.get(i));
+		System.out.printf("productlist.get(%d) -> %s\n",i, productList.get(i));
+		System.out.println();
 		}
 //		productList.add(new Tv()); //public boolean add(Prodcut e){} // product와 자손 ok
 //		productList.add(new Audio());
@@ -74,7 +75,7 @@ public class GenericTest2 {
 	}
 	public static void printALL(ArrayList<Product> list) {//ArrayList의 Product만 됨
 		for(Product p : list)
-			System.out.println(p);
+			System.out.println("sdsds"+p);
 		
 	}
 
